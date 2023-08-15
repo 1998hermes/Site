@@ -1,0 +1,111 @@
+index.html:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Pessoal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- O conteúdo das seções será incluído aqui através do JavaScript -->
+    <section id="content"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+sobre.html:
+
+<section id="sobre">
+  <h2>Sobre Mim</h2>
+  <p>Meu nome é Guilherme, atualmente estudo Tecnologia em Desenvolvimento Mobile. Meus hobbies incluem conhecer novas tecnologias, ir à praia, leitura, assistir séries e filmes. Amo cinema e conhecer novos lugares, também adoro fazer explorações ao ar livre.</p>
+</section>
+formacao.html:
+
+<section id="formacao">
+  <h2>Formação Educacional e Idiomas</h2>
+  <p>Sou formado no ensino médio e também possuo diploma de curso de cabeleireiro. Além disso, fiz alguns cursos complementares sobre pacote Office e outros hobbies que gosto. Atualmente, estudo Tecnologia em Desenvolvimento Mobile na Universidade Uninter.</p>
+</section>
+portfolio.html:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Pessoal - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="portfolio">
+      <h2>Portfólio</h2>
+      <p>Aqui estão alguns links para trabalhos que desenvolvi durante o curso:</p>
+      <ul>
+        <li>
+          <a href="meu-trabalho-1.html">
+            Trabalho 1 Engenharia de Software
+            <img src="https://github.com/1998hermes/Meu-Site/blob/main/images/images-imagem1.jpg.png?raw=true" alt="Imagem Trabalho 1">
+          </a>
+        </li>
+        <li>
+          <a href="meu-trabalho-2.html">
+            Trabalho 2  Metodologia do Designe e Concepção
+            <img src="https://github.com/1998hermes/Meu-Site/blob/main/images/images-imagem2.jpg.png?raw=true" alt="Imagem Trabalho 2">
+          </a>
+        </li>
+        <li>
+          <a href="meu-trabalho-3.html">
+            Trabalho 3 Codigo de Cadastro de Funcionario
+            <img src="https://github.com/1998hermes/Meu-Site/blob/main/images/images-imagem3.jpg.png?raw=true" alt="Imagem Trabalho 3">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+contato.html:
+
+<section id="contato">
+  <h2>Contato</h2>
+  <form id="contact-form" action="enviar-email.php" method="POST">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
